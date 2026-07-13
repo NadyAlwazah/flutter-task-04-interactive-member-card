@@ -13,4 +13,9 @@ abstract class Styles {
     fontWeight: FontWeight.bold,
     letterSpacing: 4,
   );
+  static TextStyle bodyBold = const TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+    letterSpacing: 3,
+  );
 }
