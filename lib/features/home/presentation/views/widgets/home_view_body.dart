@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task_04_interactive_member_card/core/theme/app_colors.dart';
 import 'package:flutter_task_04_interactive_member_card/core/utils/styles.dart';
 import 'package:flutter_task_04_interactive_member_card/features/home/presentation/views/widgets/custom_card.dart';
 
@@ -20,6 +21,28 @@ class HomeViewBody extends StatelessWidget {
                 Text("ROLE", style: Styles.bodyBold),
                 const Spacer(),
                 Text("EDITOR", style: Styles.bodyBold),
+
+                const Divider(color: Color(0xFFF1F3F5)),
+
+                const SizedBox(height: 64),
+                const Text(
+                  "AUTHOR",
+                  style: TextStyle(
+                    letterSpacing: 3,
+                    color: AppColors.appBarText,
+                  ),
+                ),
+                const Text(
+                  "Elias Thorne",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 48),
+                ),
+                const SizedBox(height: 32),
+
+                const Text(
+                  "Focuses on visual storytelling and cinematic narrative structure.",
+                  style: TextStyle(fontSize: 18, color: Color(0xFF484A4B)),
+                ),
+                const SizedBox(height: 32),
               ],
             ),
           ],
