@@ -3,6 +3,7 @@ import 'package:flutter_task_04_interactive_member_card/core/theme/app_colors.da
 import 'package:flutter_task_04_interactive_member_card/core/utils/styles.dart';
 import 'package:flutter_task_04_interactive_member_card/features/home/presentation/views/widgets/add_skill_button.dart';
 import 'package:flutter_task_04_interactive_member_card/features/home/presentation/views/widgets/custom_card.dart';
+import 'package:flutter_task_04_interactive_member_card/features/home/presentation/views/widgets/skills_list.dart';
 
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});
@@ -59,6 +60,8 @@ class _HomeViewBodyState extends State<HomeViewBody> {
 
                 AddSkillButton(onAddSkill: addSkillToList),
                 const SizedBox(height: 24),
+
+                SkillsList(skills: addedSkills),
               ],
             ),
           ],
