@@ -26,6 +26,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
       child: Padding(
         padding: const EdgeInsets.only(left: 6, right: 6, bottom: 64, top: 32),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomCard(),
             SizedBox(height: 16),
@@ -35,35 +36,31 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                 Text("ROLE", style: Styles.bodyBold),
                 const Spacer(),
                 Text("EDITOR", style: Styles.bodyBold),
-
-                const Divider(color: Color(0xFFF1F3F5)),
-
-                const SizedBox(height: 64),
-                const Text(
-                  "AUTHOR",
-                  style: TextStyle(
-                    letterSpacing: 3,
-                    color: AppColors.appBarText,
-                  ),
-                ),
-                const Text(
-                  "Elias Thorne",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 48),
-                ),
-                const SizedBox(height: 32),
-
-                const Text(
-                  "Focuses on visual storytelling and cinematic narrative structure.",
-                  style: TextStyle(fontSize: 18, color: Color(0xFF484A4B)),
-                ),
-                const SizedBox(height: 32),
-
-                AddSkillButton(onAddSkill: addSkillToList),
-                const SizedBox(height: 24),
-
-                SkillsList(skills: addedSkills),
               ],
             ),
+            const Divider(color: Color(0xFFF1F3F5)),
+
+            const SizedBox(height: 64),
+            const Text(
+              "AUTHOR",
+              style: TextStyle(letterSpacing: 3, color: AppColors.appBarText),
+            ),
+            const Text(
+              "Elias Thorne",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 48),
+            ),
+            const SizedBox(height: 32),
+
+            const Text(
+              "Focuses on visual storytelling and cinematic narrative structure.",
+              style: TextStyle(fontSize: 18, color: Color(0xFF484A4B)),
+            ),
+            const SizedBox(height: 32),
+
+            AddSkillButton(onAddSkill: addSkillToList),
+            const SizedBox(height: 24),
+
+            SkillsList(skills: addedSkills),
           ],
         ),
       ),
